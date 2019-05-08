@@ -9,6 +9,7 @@ const Todos = ({ todos, completeTodo, removeTodo }) => {
           todo={todo}
           key={index}
           index={index}
+          id={todo.id}
           completeTodo={completeTodo}
           removeTodo={removeTodo}
         />

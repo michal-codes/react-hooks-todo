@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TodoItem = ({ todo, index, removeTodo, completeTodo }) => {
+const TodoItem = ({ todo, index, id, removeTodo, completeTodo }) => {
   const removeBtnStyle = {
     padding: '20px',
     background: '#e92936',
@@ -23,7 +23,7 @@ const TodoItem = ({ todo, index, removeTodo, completeTodo }) => {
       <div className="todo-item">
         <p
           style={{
-            textDecoration: todo.done ? 'line-through' : 'none',
+            textDecoration: todo.isCompleted ? 'line-through' : 'none',
             paddingLeft: '20px',
             flex: '8'
           }}
@@ -31,10 +31,13 @@ const TodoItem = ({ todo, index, removeTodo, completeTodo }) => {
           {todo.text}
         </p>
         <div style={{ flex: '2', display: 'flex' }}>
-          <button onClick={() => completeTodo(index)} style={completeBtnStyle}>
+          <button
+            onClick={() => completeTodo(index, id)}
+            style={completeBtnStyle}
+          >
             DONE
           </button>
-          <button onClick={() => removeTodo(index)} style={removeBtnStyle}>
+          <button onClick={() => removeTodo(id)} style={removeBtnStyle}>
             DEL
           </button>
         </div>
