@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-hooks-todo/static/css/main.b87e65e5.chunk.css",
+    "main.js": "/react-hooks-todo/static/js/main.013b1f5e.chunk.js",
+    "main.js.map": "/react-hooks-todo/static/js/main.013b1f5e.chunk.js.map",
+    "runtime~main.js": "/react-hooks-todo/static/js/runtime~main.68f30e0c.js",
+    "runtime~main.js.map": "/react-hooks-todo/static/js/runtime~main.68f30e0c.js.map",
+    "static/js/2.7c059e57.chunk.js": "/react-hooks-todo/static/js/2.7c059e57.chunk.js",
+    "static/js/2.7c059e57.chunk.js.map": "/react-hooks-todo/static/js/2.7c059e57.chunk.js.map",
+    "index.html": "/react-hooks-todo/index.html",
+    "precache-manifest.4a52e1b3f6a5a6df3fbe2039b463ce35.js": "/react-hooks-todo/precache-manifest.4a52e1b3f6a5a6df3fbe2039b463ce35.js",
+    "service-worker.js": "/react-hooks-todo/service-worker.js",
+    "static/css/main.b87e65e5.chunk.css.map": "/react-hooks-todo/static/css/main.b87e65e5.chunk.css.map"
+  }
+}
