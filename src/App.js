@@ -13,8 +13,12 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios('http://localhost:4000/todos');
-      setTodos(result.data);
+      try {
+        const result = await axios('http://localhost:4000/todos');
+        setTodos(result.data);
+      } catch (error) {
+        console.log(error);
+      }
     };
     fetchData();
   }, []);
@@ -46,6 +50,15 @@ const App = () => {
     axios
       .put(`http://localhost:4000/todos/${id}`, newTodos[index])
       .then(res => setTodos(newTodos));
+
+    // spradzic to
+    //   console.log(id);
+    // setTodos([
+    //   ...todos.map(todo => {
+    //     if (todo.id === id) todo.completed = !todo.completed;
+    //     return todo;
+    //   })
+    // ]);
   };
 
   // DELETE operation
@@ -74,15 +87,6 @@ const App = () => {
                 completeTodo={completeTodo}
                 removeTodo={removeTodo}
               />
-              {/* {todos.map((todo, index) => (
-                <Todo
-                  todo={todo}
-                  key={index}
-                  index={index}
-                  removeTodo={removeTodo}
-                  completeTodo={completeTodo}
-                />
-              ))} */}
             </React.Fragment>
           )}
         />
