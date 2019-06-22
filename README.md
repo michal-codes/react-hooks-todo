@@ -13,15 +13,33 @@ An web "to-do" application. Made for get better at React
 
 # Instructions
 
-To start json-server
+Requires Node.js version 11.12.0, npm version 6.9.0
 
-### `npm run json:server`
+Clone repo:
 
-To start React app
+```
+git clone https://github.com/michal-codes/react-hooks-todo.git
+```
 
-### `npm start`
+Cd into project folder and run:
 
-Runs the app in the development mode.<br>
+```
+npm install
+```
+
+To start json-server, open project folder in new terminal window an run command:
+
+```
+npm run json:server
+```
+
+Back to other terminal window with open project folder an run:
+
+```
+npm start
+```
+
+The app runs in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
@@ -34,9 +52,9 @@ You will also see any lint errors in the console.
 # Todo
 
 - Add some final touches.
-- Make a version with request to JSON placeholder an put is as live demo
 
 # Done already
 
 - Make a version with request to json-server whoch is in dependencies
 - Separate todos into two components into Todos and TodoItem. .map() is in Todos component on passed todos as props
+- Make a version with request to JSON placeholder
