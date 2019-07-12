@@ -50,24 +50,13 @@ const App = () => {
     axios
       .put(`http://localhost:4000/todos/${id}`, newTodos[index])
       .then(res => setTodos(newTodos));
-
-    // spradzic to
-    //   console.log(id);
-    // setTodos([
-    //   ...todos.map(todo => {
-    //     if (todo.id === id) todo.completed = !todo.completed;
-    //     return todo;
-    //   })
-    // ]);
   };
 
   // DELETE operation
   const removeTodo = id => {
     axios.delete(`http://localhost:4000/todos/${id}`).then(res =>
       setTodos([
-        ...todos.filter(todo => {
-          return todo.id !== id;
-        })
+        ...todos.filter(todo => todo.id !== id)
       ])
     );
   };
